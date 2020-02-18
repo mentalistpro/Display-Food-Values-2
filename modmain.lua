@@ -72,6 +72,13 @@ elseif DFV_LANG == "CN" then
 	_S.DFV_SPOILSOON = "很快便會腐壞了"
 	_S.DFV_SPOILIN = "將於"
 	_S.DFV_SPOILDAY = "日内腐壞"
+elseif DFV_LANG == "CNS" then
+	_S.DFV_HUNGER = "饥饿"
+	_S.DFV_HEALTH = "生命"
+	_S.DFV_SANITY = "理智"
+	_S.DFV_SPOILSOON = "很快便会腐坏了"
+	_S.DFV_SPOILIN = "将于"
+	_S.DFV_SPOILDAY = "日内腐坏"
 else
 	_S.DFV_HUNGER = "Hunger"
 	_S.DFV_HEALTH = "Health"
@@ -228,7 +235,7 @@ function Inv:UpdateCursorText()
 									str_DFV = str_DFV .. "en"
 								elseif STRINGS.DFV_LANG == "IT" then
 									str = str .. "i"	
-								elseif STRINGS.DFV_LANG == "CN" then
+								elseif STRINGS.DFV_LANG == "CN" or STRINGS.DFV_LANG == "CNS" then
 									str = str 										
 								else
 									str_DFV = str_DFV .. "s"
@@ -502,7 +509,7 @@ function ItemTile:GetDescriptionString()
 							str = str .. "en"
 						elseif STRINGS.DFV_LANG == "IT" then
 							str = str .. "i"	
-						elseif STRINGS.DFV_LANG == "CN" then
+						elseif STRINGS.DFV_LANG == "CN" or STRINGS.DFV_LANG == "CNS" then
 							str = str 							
 						else
 							str = str .. "s"

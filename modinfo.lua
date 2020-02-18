@@ -19,7 +19,8 @@ configuration_options =
 		name = "DFV_Language",
 		label = "Language",
 		options =	{
-						{description = "中文", data = "CN"},
+						{description = "繁體中文", data = "CN"},
+						{description = "简体中文", data = "CNS"},
 						{description = "Deutsche", data = "GR"},
 						{description = "English", data = "EN"},
 						{description = "Española", data = "SP"},
