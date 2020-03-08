@@ -1,7 +1,7 @@
 name 		= "Display Food Values 2.0"
 description = "Displays what food and healing items have what hunger, health, sanity values (including rotting and expiration date)"
 author 		= "alks and mentalistpro"
-version 	= "2.0.1"
+version 	= "2.0.2"
 forumthread = "16007-Download-Display-food-healing-items-values-(hunger-health-sanity)-END-IS-NIGH-U"
 api_version = 6
 icon_atlas 	= "DisplayFoodValues.xml"
