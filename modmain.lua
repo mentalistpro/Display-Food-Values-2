@@ -279,7 +279,7 @@ function Inv:UpdateCursorText()
 				    	str_DFV = str_DFV .. "\n"
 						local prep_foods = require("preparedfoods")
 						if prep_foods[inv_item.prefab] ~= nil and prep_foods[inv_item.prefab].temperatureduration ~= nil then
-							str_DFV = str_DFV .. "t "
+							str_DFV = str_DFV .. " / t "
 							if prep_foods[inv_item.prefab].temperature < 0 then
 								str_DFV = str_DFV .. "-"
 							else
@@ -287,7 +287,7 @@ function Inv:UpdateCursorText()
 							end											
 							str_DFV = str_DFV .. prep_foods[inv_item.prefab].temperatureduration
 						elseif inv_item.prefab == "ice" and inv_item.components.edible.temperatureduration ~= nil then
-							str_DFV = str_DFV .. "t "
+							str_DFV = str_DFV .. " / t "
 							if inv_item.components.edible.temperaturedelta < 0 then
 								str_DFV = str_DFV .. "-"
 							else
